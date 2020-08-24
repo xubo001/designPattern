@@ -11,4 +11,35 @@ public class ThreeKingdomPeopleFactory {
         return null;
     }
 
+
+    public static ITellThreeKingdomPeople getInstance2(String className){
+        if(className!=null&&!"".equals(className)) {
+            try {
+                ITellThreeKingdomPeople o = (ITellThreeKingdomPeople) Class.forName(className).newInstance();
+                return o;
+            } catch (InstantiationException e) {
+                e.printStackTrace();
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            }
+        }
+        return null;
+    }
+
+    public static ITellThreeKingdomPeople getInstance3(Class clazz){
+        if(clazz!=null) {
+            try {
+                ITellThreeKingdomPeople o = (ITellThreeKingdomPeople) clazz.newInstance();
+                return o;
+            } catch (InstantiationException e) {
+                e.printStackTrace();
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            }
+        }
+        return null;
+    }
+
 }
