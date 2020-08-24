@@ -1,5 +1,9 @@
 package org.firewater.simplefactory;
 
+import org.firewater.common.ITellThreeKingdomPeople;
+import org.firewater.common.TellGuanyuStory;
+import org.firewater.common.TellZhangfeiStory;
+
 /*
 起始类  三种模式
 （1）、使用分隔区间的字符串判断
@@ -18,10 +22,10 @@ public class TellStoryMain {
 
 
         //使用类名称判断
-        ITellThreeKingdomPeople guanYu2 = ThreeKingdomPeopleFactory.getInstance2("org.firewater.simplefactory.TellGuanyuStory");
+        ITellThreeKingdomPeople guanYu2 = ThreeKingdomPeopleFactory.getInstance2("org.firewater.common.TellGuanyuStory");
         guanYu2.story();
 
-        ITellThreeKingdomPeople zhangFei2 = ThreeKingdomPeopleFactory.getInstance2("org.firewater.simplefactory.TellZhangfeiStory");
+        ITellThreeKingdomPeople zhangFei2 = ThreeKingdomPeopleFactory.getInstance2("org.firewater.common.TellZhangfeiStory");
         zhangFei2.story();
 
         //使用类进行传参

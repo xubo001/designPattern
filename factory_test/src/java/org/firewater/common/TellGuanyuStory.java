@@ -1,4 +1,6 @@
-package org.firewater.simplefactory;
+package org.firewater.common;
+
+import org.firewater.common.ITellThreeKingdomPeople;
 
 public class TellGuanyuStory implements ITellThreeKingdomPeople {
     @Override

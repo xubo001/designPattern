@@ -1,5 +1,9 @@
 package org.firewater.simplefactory;
 
+import org.firewater.common.ITellThreeKingdomPeople;
+import org.firewater.common.TellGuanyuStory;
+import org.firewater.common.TellZhangfeiStory;
+
 public class ThreeKingdomPeopleFactory {
     public static ITellThreeKingdomPeople getInstance(String name){
         if("GuanYu".equals(name)){
