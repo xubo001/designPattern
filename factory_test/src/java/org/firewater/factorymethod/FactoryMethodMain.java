@@ -12,5 +12,9 @@ public class FactoryMethodMain {
         ITellThreeKingdomPeople zhangFei=  zhangFeiFactory.createPeople();
         zhangFei.story();
 
+        ZhaoYunFactory zhaoYunFactory=new ZhaoYunFactory();
+        ITellThreeKingdomPeople zhaoYun=  zhaoYunFactory.createPeople();
+        zhaoYun.story();
+
     }
 }
