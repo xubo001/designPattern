@@ -1,4 +1,4 @@
-package org.firewater.proxy.staticproxy;
+package org.firewater.proxy.common;
 
 public class Student implements Person {
 

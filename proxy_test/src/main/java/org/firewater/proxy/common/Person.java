@@ -1,4 +1,4 @@
-package org.firewater.proxy.staticproxy;
+package org.firewater.proxy.common;
 
 public interface Person {
     public void study();
