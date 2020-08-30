@@ -7,6 +7,7 @@ public class JDKProxyTest {
     public static void main(String[] args) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
         JDKProxy jdkProxy =new JDKProxy();
         Object instance = jdkProxy.getInstance(new Student());
+        System.out.println(instance.getClass().getName());
         Method study = instance.getClass().getMethod("study", null);
         study.invoke(instance);
     }
