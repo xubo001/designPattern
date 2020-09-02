@@ -11,7 +11,7 @@ public class EventListener {
 
     public  void AddListener(String eventType,Object targetElement){
         try {
-            this.AddListener(eventType,targetElement,targetElement.getClass().getMethod("on"+getUpperCaseMethodName(eventType)));
+            this.AddListener(eventType,targetElement,targetElement.getClass().getMethod("on"+getUpperCaseMethodName(eventType),Event.class));
         } catch (NoSuchMethodException e) {
             e.printStackTrace();
         }
@@ -22,10 +22,11 @@ public class EventListener {
     }
     private void triger(Event event){
         try {
+            event.setSrcElement(this);
             event.setHappenTime(new Date());
             Method callBack = event.getCallBack();
             if(callBack!=null) {
-                callBack.invoke(event.getTargetElement(), null);
+                callBack.invoke(event.getTargetElement(), event);
             }
         } catch (IllegalAccessException e) {
             e.printStackTrace();

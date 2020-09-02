@@ -1,25 +1,27 @@
 package org.firewater.observer.eventlistener.mouseevent;
 
+import org.firewater.observer.eventlistener.core.Event;
+
 public class MouseCallBack {
-    public  void onMouseOver(){
-        System.out.println("this is  triger mouse over method");
+    public  void onMouseOver(Event e){
+        System.out.println("this is  triger mouse over method"+e);
     };
-    public  void onMouseUp(){
-        System.out.println("this is triger mouse up method");
+    public  void onMouseUp(Event e){
+        System.out.println("this is triger mouse up method"+e);
     };
-    public  void onMouseDown(){
-        System.out.println("this is triger mouse down method");
+    public  void onMouseDown(Event e){
+        System.out.println("this is triger mouse down method"+e);
     };
-    public  void onMouseMove(){
-        System.out.println("this is triger mouse move method");
+    public  void onMouseMove(Event e){
+        System.out.println("this is triger mouse move method"+e);
     };
-    public  void onMouseClick(){
-        System.out.println("this istriger  mouse click method");
+    public  void onMouseClick(Event e){
+        System.out.println("this is triger  mouse click method"+e);
     };
-    public  void onMouseWheel(){
-        System.out.println("this is triger mouse wheel method");
+    public  void onMouseWheel(Event e){
+        System.out.println("this is triger mouse wheel method"+e);
     };
-    public  void onMouseDoubleClick(){
-        System.out.println("this is triger mouse double click method");
+    public  void onMouseDoubleClick(Event e){
+        System.out.println("this is triger mouse double click method"+e);
     };
 }

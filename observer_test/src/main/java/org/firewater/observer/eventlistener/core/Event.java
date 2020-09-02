@@ -55,4 +55,15 @@ public class Event {
     public void setHappenTime(Date happenTime) {
         this.happenTime = happenTime;
     }
+
+    @Override
+    public String toString() {
+        return "Event{" +
+                "srcElement=" + srcElement +
+                ", targetElement=" + targetElement +
+                ", triger='" + triger + '\'' +
+                ", callBack=" + callBack +
+                ", happenTime=" + happenTime +
+                '}';
+    }
 }
