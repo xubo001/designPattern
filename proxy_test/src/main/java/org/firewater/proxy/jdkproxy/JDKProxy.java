@@ -7,7 +7,7 @@ import java.lang.reflect.Proxy;
 public class JDKProxy  implements InvocationHandler {
 
     private Object o;
-    @Override
+
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         before ();
         Object invoke = method.invoke(o, args);
