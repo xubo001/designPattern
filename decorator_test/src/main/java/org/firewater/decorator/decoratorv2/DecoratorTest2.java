@@ -21,9 +21,5 @@ public class DecoratorTest2 {
         PorkRibsNoodlesDecorator porkRibsNoodlesDecorator=new PorkRibsNoodlesDecorator(eggNoodlesDecorator);
         System.out.println(porkRibsNoodlesDecorator.getMsg());
         System.out.println(porkRibsNoodlesDecorator.getPrice());
-
-
     }
-
-
 }
