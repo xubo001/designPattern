@@ -7,6 +7,9 @@ public  abstract  class NoodlesDecorator extends  NoodlesBase{
         this.noodles = noodles;
     }
 
+    protected NoodlesDecorator() {
+    }
+
     public  String getMsg(){
         return noodles.getMsg();
     }

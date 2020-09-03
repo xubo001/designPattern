@@ -3,7 +3,7 @@ package org.firewater.decorator.decoratorv2;
 public class PorkRibsNoodlesDecorator extends NoodlesDecorator {
     private Noodles noodles;
     public PorkRibsNoodlesDecorator(Noodles noodles){
-        super(noodles);
+        this.noodles=noodles;
     }
     public  String getMsg(){
         return noodles.getMsg()+"+1排骨";
